@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: pink;
+    background-color: black;
+}
+
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #36454F;
+    box-shadow: 0 0 20px pink;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+header h1 {
+    font-weight: 300;
+    margin-left: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.edit-mode {
+    color: darkslateblue;
+}
+
+/* form and input */
+.form-input {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid pink;
+    /* box-shadow: 0 0 10px pink; */
+    border-radius: 5px;
+    background-color: pink;
+    color: black;
+    outline: none;
+}
+
+.form-input-filter {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    /* box-shadow: 0 0 10px pink; */
+    border-radius: 5px;
+    /* background-color: pink; */
+    background: transparent;
+    color: pink;
+    outline: none;
+}
+
+/* buttons */
+.btn {
+    width: 100%;
+    background-color: black;
+    color: pink;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px pink;
+}
+
+.btn-link {
+    font-size: 16px;
+    background-color: transparent;
+    color: pink;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn-clear {
+    margin-top: 20px;
+    width: 100%;
+    /* font-size: 16px; */
+    background-color: transparent;
+    color: pink;
+    border: 1px solid pink;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-clear:hover {
+    background-color: red;
+    color: black;
+    box-shadow: 0 0 10px pink;
+    border: none;
+}
+
+.text-red {
+    color: red;
+}
+
+.items {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items li {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    border: 1px solid pink;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 5px 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .items li {
+        width: 100%;
+    }
+}
